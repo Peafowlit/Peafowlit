@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{835BCDEE-0824-466E-A778-73EE1E33DE80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PeafowlIT_MVC</RootNamespace>
+    <AssemblyName>PeafowlIT_MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>C:\Users\Vids Patel\Documents\Visual Studio 2013\Projects\Peafowl\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Mail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\core-icons\core_style.css" />
+    <Content Include="css\core-icons\fonts\core_icomoonac5d.html" />
+    <Content Include="css\core-icons\fonts\core_icomoonac5d.svg" />
+    <Content Include="css\icons\elegant.css" />
+    <Content Include="css\icons\elegant\elegant8606.html" />
+    <Content Include="css\icons\elegant\elegant8606.svg" />
+    <Content Include="css\icons\fonts\stroke74169.html" />
+    <Content Include="css\icons\fonts\stroke74169.svg" />
+    <Content Include="css\icons\icons.css" />
+    <Content Include="css\images\milano.html" />
+    <Content Include="css\scripts.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="images\2ee48c3fe9_s1.jpg" />
+    <Content Include="images\2ee48c3fe9_s2.jpg" />
+    <Content Include="images\2ee48c3fe9_s3.jpg" />
+    <Content Include="images\2ee48c3fe9_s4.jpg" />
+    <Content Include="images\2ee48c3fe9_s5.jpg" />
+    <Content Include="images\2ee48c3fe9_s6.jpg" />
+    <Content Include="images\about-us-image.jpg" />
+    <Content Include="images\about_us.jpg" />
+    <Content Include="images\about_us2.jpg" />
+    <Content Include="images\audiothumb1.jpg" />
+    <Content Include="images\background-image1.jpg" />
+    <Content Include="images\background-image11.jpg" />
+    <Content Include="images\background-image4.jpg" />
+    <Content Include="images\background-image5.jpg" />
+    <Content Include="images\blog-image5.jpg" />
+    <Content Include="images\blog-image7.jpg" />
+    <Content Include="images\breadcrumbs-image.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\envato-transparent.png" />
+    <Content Include="images\envato-transparent1.png" />
+    <Content Include="images\envato.jpg" />
+    <Content Include="images\image1.jpg" />
+    <Content Include="images\image2.jpg" />
+    <Content Include="images\image3.jpg" />
+    <Content Include="images\image4.jpg" />
+    <Content Include="images\image5.jpg" />
+    <Content Include="images\image6.jpg" />
+    <Content Include="images\image7.jpg" />
+    <Content Include="images\image8.jpg" />
+    <Content Include="images\joomla-transparent1.png" />
+    <Content Include="images\joomla.png" />
+    <Content Include="images\jquery-transparent.png" />
+    <Content Include="images\jquery-transparent1.png" />
+    <Content Include="images\jquery.jpg" />
+    <Content Include="images\laptop-image.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo%402x.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_white%402x.png" />
+    <Content Include="images\logo_white.png" />
+    <Content Include="images\milano.jpg" />
+    <Content Include="images\milano.mp4" />
+    <Content Include="images\milano230a.jpg" />
+    <Content Include="images\milano230a.mp4" />
+    <Content Include="images\mockup.png" />
+    <Content Include="images\mockup1.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\parallax-image1.jpg" />
+    <Content Include="images\parallax-image5.jpg" />
+    <Content Include="images\parallax-image7.jpg" />
+    <Content Include="images\parallax-image8.jpg" />
+    <Content Include="images\pixel.gif" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\slider1.jpg" />
+    <Content Include="images\slider2.jpg" />
+    <Content Include="images\slider3.jpg" />
+    <Content Include="images\team-image1.jpg" />
+    <Content Include="images\team-image2.jpg" />
+    <Content Include="images\team-image3.jpg" />
+    <Content Include="images\team-image4.jpg" />
+    <Content Include="images\team-image5.jpg" />
+    <Content Include="images\testimonials4.png" />
+    <Content Include="images\testimonial_1.png" />
+    <Content Include="images\testimonial_2.png" />
+    <Content Include="images\themeforest.jpg" />
+    <Content Include="images\welcome-to-inspirado.jpg" />
+    <Content Include="images\windows8-transparent.png" />
+    <Content Include="images\windows8-transparent1.png" />
+    <Content Include="images\windows8.jpg" />
+    <Content Include="images\wordpress-transparent.png" />
+    <Content Include="images\wordpress-transparent1.png" />
+    <Content Include="images\wordpress.jpg" />
+    <Content Include="js\accordion.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\init.js" />
+    <Content Include="js\jquery-migrate.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.carouFredSel-6.2.1.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\mediaelement\mediaelement-and-player.min.js" />
+    <Content Include="js\mediaelement\mediaelement.js" />
+    <Content Include="js\portfolio-init.js" />
+    <Content Include="js\prettify.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\widget.min.js" />
+    <Content Include="rs-plugin\assets\about_us.jpg" />
+    <Content Include="rs-plugin\assets\about_us2.jpg" />
+    <Content Include="rs-plugin\assets\coloredbg.html" />
+    <Content Include="rs-plugin\assets\gridtile.html" />
+    <Content Include="rs-plugin\assets\gridtile_3x3.html" />
+    <Content Include="rs-plugin\assets\gridtile_3x3_white.html" />
+    <Content Include="rs-plugin\assets\gridtile_white.html" />
+    <Content Include="rs-plugin\assets\image2.jpg" />
+    <Content Include="rs-plugin\assets\image6.jpg" />
+    <Content Include="rs-plugin\assets\image9.jpg" />
+    <Content Include="rs-plugin\assets\loader.gif" />
+    <Content Include="rs-plugin\assets\mockup.png" />
+    <Content Include="rs-plugin\assets\slider1.jpg" />
+    <Content Include="rs-plugin\assets\slider2.jpg" />
+    <Content Include="rs-plugin\assets\slider3.jpg" />
+    <Content Include="rs-plugin\css\closedhand.html" />
+    <Content Include="rs-plugin\css\openhand.html" />
+    <Content Include="rs-plugin\css\settings.css" />
+    <Content Include="rs-plugin\fonts\revicons\revicons90c6.html" />
+    <Content Include="rs-plugin\fonts\revicons\revicons90c6.svg" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="rs-plugin\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="rs-plugin\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="rs-plugin\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Views\Home\index.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="css\core-icons\fonts\core_icomoon.eot" />
+    <Content Include="css\core-icons\fonts\core_icomoonac5d.eot" />
+    <Content Include="css\core-icons\fonts\core_icomoonac5d.woff" />
+    <Content Include="css\icons\elegant\elegant.eot" />
+    <Content Include="css\icons\elegant\elegant8606.eot" />
+    <Content Include="css\icons\elegant\elegant8606.woff" />
+    <Content Include="css\icons\fonts\stroke7.eot" />
+    <Content Include="css\icons\fonts\stroke74169.eot" />
+    <Content Include="css\icons\fonts\stroke74169.woff" />
+    <Content Include="images\milano.ogv" />
+    <Content Include="images\milano.webm" />
+    <None Include="Project_Readme.html" />
+    <Content Include="rs-plugin\fonts\revicons\revicons90c6.eot" />
+    <Content Include="rs-plugin\fonts\revicons\revicons90c6.woff" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17171</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17171/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
